@@ -1,0 +1,77 @@
+gvamosi@gergo1:~/github-com_martinwojtus/tutorials/spring-boot/angular11-spring-boot2-mysql$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  docker-ce-rootless-extras docker-scan-plugin
+Suggested packages:
+  aufs-tools cgroupfs-mount | cgroup-lite
+Recommended packages:
+  slirp4netns
+The following NEW packages will be installed:
+  containerd.io docker-ce docker-ce-cli docker-ce-rootless-extras docker-scan-plugin
+0 upgraded, 5 newly installed, 0 to remove and 76 not upgraded.
+Need to get 107 MB of archives.
+After this operation, 465 MB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 https://download.docker.com/linux/debian buster/stable amd64 containerd.io amd64 1.4.6-1 [28.3 MB]
+Get:2 https://download.docker.com/linux/debian buster/stable amd64 docker-ce-cli amd64 5:20.10.7~3-0~debian-buster [41.4 MB]                                                                                      
+Get:3 https://download.docker.com/linux/debian buster/stable amd64 docker-ce amd64 5:20.10.7~3-0~debian-buster [24.8 MB]                                                                                          
+Get:4 https://download.docker.com/linux/debian buster/stable amd64 docker-ce-rootless-extras amd64 5:20.10.7~3-0~debian-buster [9,062 kB]                                                                         
+Get:5 https://download.docker.com/linux/debian buster/stable amd64 docker-scan-plugin amd64 0.8.0~debian-buster [3,889 kB]                                                                                        
+Fetched 107 MB in 28s (3,801 kB/s)                                                                                                                                                                                
+Selecting previously unselected package containerd.io.
+(Reading database ... 539116 files and directories currently installed.)
+Preparing to unpack .../containerd.io_1.4.6-1_amd64.deb ...
+Unpacking containerd.io (1.4.6-1) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../docker-ce-cli_5%3a20.10.7~3-0~debian-buster_amd64.deb ...
+Unpacking docker-ce-cli (5:20.10.7~3-0~debian-buster) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../docker-ce_5%3a20.10.7~3-0~debian-buster_amd64.deb ...
+Unpacking docker-ce (5:20.10.7~3-0~debian-buster) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../docker-ce-rootless-extras_5%3a20.10.7~3-0~debian-buster_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:20.10.7~3-0~debian-buster) ...
+Selecting previously unselected package docker-scan-plugin.
+Preparing to unpack .../docker-scan-plugin_0.8.0~debian-buster_amd64.deb ...
+Unpacking docker-scan-plugin (0.8.0~debian-buster) ...
+Setting up docker-scan-plugin (0.8.0~debian-buster) ...
+Setting up containerd.io (1.4.6-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Setting up docker-ce-cli (5:20.10.7~3-0~debian-buster) ...
+Setting up docker-ce-rootless-extras (5:20.10.7~3-0~debian-buster) ...
+Setting up docker-ce (5:20.10.7~3-0~debian-buster) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Processing triggers for man-db (2.8.5-2) ...
+Processing triggers for systemd (241-7~deb10u7) ...
+gvamosi@gergo1:~/github-com_martinwojtus/tutorials/spring-boot/angular11-spring-boot2-mysql$ sudo docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+b8dfde127a29: Pull complete 
+Digest: sha256:df5f5184104426b65967e016ff2ac0bfcd44ad7899ca3bbcf8e44e4461491a9e
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+gvamosi@gergo1:~/github-com_martinwojtus/tutorials/spring-boot/angular11-spring-boot2-mysql$
