@@ -75,3 +75,44 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
 gvamosi@gergo1:~/github-com_martinwojtus/tutorials/spring-boot/angular11-spring-boot2-mysql$
+
+
+
+
+
+gvamosi@gergo1:~/github-com_martinwojtus/tutorials/spring-boot/angular11-spring-boot2-mysql$ sudo docker pull mysql
+[sudo] password for gvamosi: 
+Sorry, try again.
+[sudo] password for gvamosi: 
+Using default tag: latest
+latest: Pulling from library/mysql
+b4d181a07f80: Pull complete 
+a462b60610f5: Pull complete 
+578fafb77ab8: Pull complete 
+524046006037: Pull complete 
+d0cbe54c8855: Pull complete 
+aa18e05cc46d: Pull complete 
+32ca814c833f: Pull complete 
+9ecc8abdb7f5: Pull complete 
+ad042b682e0f: Pull complete 
+71d327c6bb78: Pull complete 
+165d1d10a3fa: Pull complete 
+2f40c47d0626: Pull complete 
+Digest: sha256:52b8406e4c32b8cf0557f1b74517e14c5393aff5cf0384eff62d9e81f4985d4b
+Status: Downloaded newer image for mysql:latest
+docker.io/library/mysql:latest
+gvamosi@gergo1:~/github-com_martinwojtus/tutorials/spring-boot/angular11-spring-boot2-mysql$
+
+
+
+
+
+gvamosi@gergo1:~/github-com_martinwojtus/tutorials/spring-boot/angular11-spring-boot2-mysql$ sudo docker run -d --name mysql-server -p 3306:3306 -e "MYSQL_ROOT_PASSWORD=mysql" mysql
+1df11bfadd0cc86e1f31320f9ba32aa6acdadc7cf8332775d428a619e23a42bb
+gvamosi@gergo1:~/github-com_martinwojtus/tutorials/spring-boot/angular11-spring-boot2-mysql$
+
+
+
+
+
+
