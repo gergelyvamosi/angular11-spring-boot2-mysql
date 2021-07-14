@@ -22,7 +22,7 @@ import com.frontbackend.springboot.model.PostRequest;
 import com.frontbackend.springboot.service.PostService;
 
 //@CrossOrigin(origins = "http://localhost:4200")
-@CrossOrigin(origins = "http://localhost:80")
+@CrossOrigin(origins = "http://localhost")
 @RestController
 @RequestMapping("/api/posts")
 public class PostsController {
